@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
-
+const MONGODB_URI =
+  'mongodb+srv://bedrock:DhuR3hXP8UTLfj9@cluster0.ycwzi.mongodb.net/?retryWrites=true&w=majority';
 mongoose
-  .connect(process.env.MONGODB_URI, {
+  .connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
