@@ -12,7 +12,7 @@ const authRoutes = require('./routers/authRoutes');
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use('/', (req, res) => res.json('hello world'));
+// app.use('/', (req, res) => res.json('hello world'));
 app.use('/auth', authRoutes);
 app.use('/blogs', blogRoutes);
 
